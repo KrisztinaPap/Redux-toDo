@@ -13,4 +13,3 @@ function ToDoList ( props ) {
 }
 
 export default connect( state => ( { toDos: state } ) )( ToDoList );
-    

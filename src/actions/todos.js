@@ -5,4 +5,8 @@ const addNewToDo = toDoContent => {
     };
 }
 
+const removeToDo = id => {
+    
+}
+
 export { addNewToDo };

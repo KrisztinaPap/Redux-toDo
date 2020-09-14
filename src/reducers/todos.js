@@ -10,6 +10,9 @@ const toDosReducer = ( state =[], action ) => {
             const newToDoList = [...state];
             newToDoList.push( newTask );
             return newToDoList;
+        case 'REMOVE_TO_DO':
+            
+            return newToDoList;
         default:
             return state;
     }

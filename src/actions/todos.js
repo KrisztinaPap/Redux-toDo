@@ -6,7 +6,10 @@ const addNewToDo = toDoContent => {
 }
 
 const removeToDo = id => {
-    
+    return {
+        type: 'REMOVE_TO_DO',
+        payload: id
+    }
 }
 
-export { addNewToDo };
+export { addNewToDo, removeToDo };

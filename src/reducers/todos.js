@@ -11,8 +11,8 @@ const toDosReducer = ( state =[], action ) => {
             newToDoList.push( newTask );
             return newToDoList;
         case 'REMOVE_TO_DO':
-            
-            return newToDoList;
+            const updatedToDoList = state.filter( toDo => toDo.id !== action.payload );
+            return updatedToDoList;
         default:
             return state;
     }

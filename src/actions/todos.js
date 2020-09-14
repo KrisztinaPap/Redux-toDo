@@ -4,3 +4,5 @@ const addNewToDo = toDoContent => {
         payload: toDoContent
     };
 }
+
+export { addNewToDo };

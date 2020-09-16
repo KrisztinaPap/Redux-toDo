@@ -7,6 +7,7 @@ import { addNewToDo } from './actions/todos';
 import { Provider } from 'react-redux';
 import ToDos from './components/ToDos';
 import ToDoList from './components/ToDoList';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const store = createStore(
   toDosReducer,
@@ -22,8 +23,10 @@ ReactDOM.render(
   <Provider store={ store }>
     <>
     <h1>React-Redux To-Do List ( TECHCareers)</h1>
-      <ToDos />
-      <ToDoList />
+    <Router>
+      <Route path="/" component={ToDoList} />
+      <Route path="/form" component={ToDos} />
+    </Router>
     </>
   </Provider>,
   document.getElementById('root')
